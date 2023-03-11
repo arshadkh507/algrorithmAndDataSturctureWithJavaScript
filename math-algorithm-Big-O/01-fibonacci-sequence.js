@@ -8,6 +8,25 @@
 // else ==> i = 1 if n = 2 and then
 
 // ! By iteration approach 1
+/* function findFibonacci (n) {
+  if (n < 2) return n;
+  let firstPrevious = 0;
+  let secondPrevious = 1;
+  let fibonacciNumber = 0;
+  for (let i = 2; i <= n; i++) {
+    fibonacciNumber = firstPrevious + secondPrevious;
+    firstPrevious = secondPrevious;
+    secondPrevious = fibonacciNumber;
+  }
+  return fibonacciNumber;
+}
+console.log(findFibonacci(5));
+console.log(findFibonacci(20)); */
+// *  time complexity O(n)
+// * Space Complexiy is O(n)
+
+
+// ! By iteration approach 2
 /*
 function findFibonacciNumber (n) {
   if (n <= 1) return n;
@@ -15,7 +34,7 @@ function findFibonacciNumber (n) {
   for (let i = 2; i <= n; i++) {
     fib[ i ] = fib[ i - 1 ] + fib[ i - 2 ];
   }
-  return fib[n-1];
+  return fib[n];
 }
 * time complexity O(n)
 console.log(findFibonacciNumber(2));
@@ -23,22 +42,7 @@ console.log(findFibonacciNumber(5));
 */
 
 
-// ! By iteration approach 2
-/* function findFibonacci (n) {
-  if (n <= 1) return n;
-  let firstPrevious = 0;
-  let secondPrevious = 1;
-  let fibonacciNumber = 0;
-  for (let i = 2; i <= n; i++) {
-    fibonacciNumber = firstPrevious + secondPrevious;
-    firstPrevious = secondPrevious;
-    secondPrevious = currentNum;
-  }
-  return fibonacciNumber;
-}
-console.log(findFibonacci(5));
-console.log(findFibonacci(20)); */
-// *  time complexity O(n)
+
 
 // ! By Recursion 
 function fibinacciRecursive (n) {
@@ -50,6 +54,7 @@ function fibinacciRecursive (n) {
 // The time complexity of this algorithm is O(2^n), which means that the time required to compute the nth Fibonacci number grows exponentially with n. The space complexity is also O(n), as each recursive call adds a new frame to the call stack.
 // Time and space complexity analysis of recursive programs - using factorial
 // https://www.youtube.com/watch?v=ncpTxqK35PI
+// https://www.khanacademy.org/computing/computer-science/algorithms/recursive-algorithms/a/improving-efficiency-of-recursive-functions
 
 /* 
 
