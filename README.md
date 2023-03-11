@@ -1,2 +1,2 @@
-# algrorithmAndDataSturctureWithJavaScript
-repositry for the problem solution in many different ways 
+# Algrorithm And DataSturcture With JavaScript
+Repositry for the problem solution in many different ways 
