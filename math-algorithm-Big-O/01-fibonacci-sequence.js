@@ -8,38 +8,43 @@
 // else ==> i = 1 if n = 2 and then
 
 // ! By iteration approach 1
-/* function findFibonacci (n) {
+function findFibonacci (n) {
+  
   if (n < 2) return n;
+
   let firstPrevious = 0;
   let secondPrevious = 1;
   let fibonacciNumber = 0;
+
   for (let i = 2; i <= n; i++) {
     fibonacciNumber = firstPrevious + secondPrevious;
     firstPrevious = secondPrevious;
     secondPrevious = fibonacciNumber;
   }
+
   return fibonacciNumber;
 }
 console.log(findFibonacci(5));
-console.log(findFibonacci(20)); */
+console.log(findFibonacci(20));
 // *  time complexity O(n)
-// * Space Complexiy is O(n)
+// * Space Complexiy is O(1)
 
 
 // ! By iteration approach 2
-/*
+
 function findFibonacciNumber (n) {
   if (n <= 1) return n;
   let fib = [ 0, 1 ];
   for (let i = 2; i <= n; i++) {
     fib[ i ] = fib[ i - 1 ] + fib[ i - 2 ];
   }
-  return fib[n];
+  return fib[ n ];
 }
-* time complexity O(n)
+//* time complexity O(n)
+//* Space Complexiy is O(n)
 console.log(findFibonacciNumber(2));
-console.log(findFibonacciNumber(5)); 
-*/
+console.log(findFibonacciNumber(5));
+
 
 
 
